@@ -59,7 +59,7 @@ function App() {
 
   useEffect(() => {
     if (user) {
-      const socket = io("http://localhost:8000", {
+      const socket = io("https://snapverse-lcwk.onrender.com", {
         query: {
           userId: user?._id, //ue backend me (socket.handshake.query.userId) es se mile gi
         },
