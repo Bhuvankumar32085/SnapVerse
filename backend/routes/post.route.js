@@ -10,7 +10,7 @@ router.route("/userpost/all").get(isAuthenticated,getUserPost);
 router.route("/:id/like").get(isAuthenticated,likePost);
 router.route("/:id/dislike").get(isAuthenticated,unlikePost);
 router.route("/:id/comment").post(isAuthenticated,addComment);
-router.route("/:id/comment/all").post(isAuthenticated,getCommentOfPost);
+router.route("/:id/dislike/add").post(isAuthenticated,getCommentOfPost);
 router.route("/delete/:id").delete(isAuthenticated,deletePost);
 router.route("/delete/comment/:id").post(isAuthenticated,deleteComment);
 router.route("/:id/bookmarke").get(isAuthenticated,bookmarkPost);
