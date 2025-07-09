@@ -35,7 +35,7 @@ function SinglePost({ post }) {
   const deletePostHandler = async () => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/api/v1/post/delete/${post._id}`,
+        `https://snapverse-lcwk.onrender.com/api/v1/post/delete/${post._id}`,
         {
           withCredentials: true,
         }
@@ -57,7 +57,7 @@ function SinglePost({ post }) {
     try {
       const action = like ? "dislike" : "like";
       const res = await axios.get(
-        `http://localhost:8000/api/v1/post/${postId}/${action}`,
+        `https://snapverse-lcwk.onrender.com/api/v1/post/${postId}/${action}`,
         {
           withCredentials: true,
         }
@@ -89,7 +89,7 @@ function SinglePost({ post }) {
   const commentHandler = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/post/${post._id}/comment`,
+        `https://snapverse-lcwk.onrender.com/api/v1/post/${post._id}/comment`,
         { text },
         {
           headers: {
@@ -118,7 +118,7 @@ function SinglePost({ post }) {
   const bookMarkHandler = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/post/${post?._id}/bookmarke`,
+        `https://snapverse-lcwk.onrender.com/api/v1/post/${post?._id}/bookmarke`,
         { withCredentials: true }
       );
       if (res.data.success) {

@@ -26,7 +26,7 @@ function CommentDialog({ open, setOpen }) {
   const sendMessageHandler = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/post/${seletedPost._id}/comment`,
+        `https://snapverse-lcwk.onrender.com/api/v1/post/${seletedPost._id}/comment`,
         { text },
         {
           headers: {

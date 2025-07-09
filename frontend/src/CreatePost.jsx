@@ -37,7 +37,7 @@ export const CreatePost = ({ open, setOpen }) => {
 
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/post/addpost`,
+        `https://snapverse-lcwk.onrender.com/api/v1/post/addpost`,
         formdata,
         {
           headers: {

@@ -10,7 +10,7 @@ function useGatAllPost() {
   useEffect(() => {
     const fetchAllPoat = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/v1/post/all", {
+        const res = await axios.get("https://snapverse-lcwk.onrender.com/api/v1/post/all", {
           withCredentials: true,
         });
         if (res.data.success) {

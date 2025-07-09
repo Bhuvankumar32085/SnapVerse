@@ -32,7 +32,7 @@ function Profile() {
   const folloeOrUnfollwHandler = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/user/followorunfollw/${userProfile?._id}`,
+        `https://snapverse-lcwk.onrender.com/api/v1/user/followorunfollw/${userProfile?._id}`,
         { withCredentials: true }
       );
       if (res.data.success) {

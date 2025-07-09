@@ -28,7 +28,7 @@ export default function Signup() {
     try {
       console.log(input);
       const res = await axios.post(
-        `http://localhost:8000/api/v1/user/register`,
+        `https://snapverse-lcwk.onrender.com/api/v1/user/register`,
         input,
         {
           headers: {

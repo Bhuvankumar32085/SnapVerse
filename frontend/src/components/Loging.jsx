@@ -31,7 +31,7 @@ export default function Login() {
     try {
       console.log(input);
       const res = await axios.post(
-        `http://localhost:8000/api/v1/user/login`,
+        `https://snapverse-lcwk.onrender.com/api/v1/user/login`,
         input,
         {
           headers: {

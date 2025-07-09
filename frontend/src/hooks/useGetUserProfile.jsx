@@ -10,7 +10,7 @@ function useGetUserProfile(userId) {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/v1/user/${userId}/profile`, {
+        const res = await axios.get(`https://snapverse-lcwk.onrender.com/api/v1/user/${userId}/profile`, {
           withCredentials: true,
         });
         if (res.data.success) {

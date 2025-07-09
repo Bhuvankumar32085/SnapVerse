@@ -12,7 +12,7 @@ function useGatAllMessage() {
     const fetchAllMessage = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/v1/message/all/${selecteduser?._id}`,
+          `https://snapverse-lcwk.onrender.com/api/v1/message/all/${selecteduser?._id}`,
           {
             withCredentials: true,
           }
